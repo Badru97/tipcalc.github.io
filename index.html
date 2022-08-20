@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Tip calculator app</title> 
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="/css/index.css">
+  <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+</head>
+<body>
+ <div class="container">
+   <div class="logo-img">
+     <img src="images/logo.svg" alt="" srcset="">
+   </div>
+    <div class="page-wrapper">
+      <div class="input" id="input">
+        <div class="bill-container">
+          <div class="label">
+            <label for="bill" class="bill">Bill</label>
+            </div>
+            <div class="img-wrapper">
+              <input type="text" class="inp-text" id="inpText" placeholder="0.0">
+            <img src="images/icon-dollar.svg" class="inp-img"  alt="" srcset="">
+            </div>
+            
+        </div>
+
+        <div class="tip-container">
+          <div class="label">
+            <label for="tip" class="tip">Select tip %</label>
+            </div>
+            <div class="tip-num">
+              <div class="btn btn-active" id="btn">5%</div>
+              <div class="btn" id="btn">10%</div>
+              <div class="btn" id="btn">15%</div>
+              <div class="btn" id="btn">25%</div>
+              <div class="btn" id="btn">50%</div>
+            
+              <input type="text" class="inp-text" id="inp-tip" placeholder="Custom">
+            </div>
+        </div>
+
+        <div class="people-container"> 
+          <div class="label">
+            <label for="people" class="people"> Number of People</label>
+            <div class="err-msg" id="errorText">Can't be zero</div>
+            </div>
+            <div class="img-wrapper">
+              <input type="text" class="inp-text" id="people-text" placeholder="1">
+              <img src="images/icon-person.svg" class="inp-img" alt="" srcset="">
+            </div>
+      
+        </div>
+      </div>
+
+      <div class="ouput">
+        <div class="line-wrapper">
+          <div class="output-value">
+            <div class="output-text">
+              <div class="title">Tip Amount</div>
+              <div class="mini-title">Person</div> 
+            </div>
+            <div class="value" id="value">$0.00</div>
+          </div> 
+
+
+            <div class="output-value">
+              <div class="output-text">
+                <div class="title">Total</div>
+                <div class="mini-title">/ person</div>
+              </div>
+              <div class="value" id="value">$0.00</div>
+            </div>
+          
+        </div>
+
+        <div class="reset-btn" id="reset-btn">RESET</div>
+
+      </div>
+    </div>
+ </div>
+    
+ <!--- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">BADRU OPEYEMI</a>.-->
+    <script src="index.js"></script>
+  </div>
+</body>
+</html>
